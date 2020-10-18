@@ -1,0 +1,11 @@
+.App__body {
+    margin: 12px 20px;
+}
+
+@media (min-width: 992px) {
+    .App__body {
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
