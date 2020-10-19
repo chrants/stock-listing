@@ -1,6 +1,8 @@
 # stock-search
 
-Front-end for the Stock Search take home assignment
+Front-end for a simple Stock Search app.
+
+This app as of now is ROUGHLY styled because it's a prototype.
 
 ## Running the app
 
