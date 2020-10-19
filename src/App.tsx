@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App__body">
-      <StockSearch onClear={() => setStockSnapshot(null)} onSubmit={setStockSnapshot} />
+      <StockSearch onSubmit={setStockSnapshot} />
       {stockSnapshot && <StockSnapshotPage stockSnapshot={stockSnapshot!} />}
     </div>
   );

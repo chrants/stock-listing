@@ -5,10 +5,9 @@ import { Card } from "../Card";
 import "./StockSearch.scss"
 
 interface Props {
-    onClear: () => void;
     onSubmit: (stockSnap: StockSnapshot) => void;
 }
-export const StockSearch = ({ onClear, onSubmit }: Props) => {
+export const StockSearch = ({ onSubmit }: Props) => {
     const [stockSnapshots, setStockSnapshots] = useState<StockSnapshot[] | null>(null);
     const [errorMessage, setErrorMessage] = useState('');
     const [query, setQuery] = useState('');
@@ -35,10 +34,6 @@ export const StockSearch = ({ onClear, onSubmit }: Props) => {
             }
         })();
     }, [query]);
-
-    console.log(stockSnapshots)
-    console.log(stockSnapshots?.[0])
-    console.log(query)
 
     return <div>
         <input className="searchInput" onChange={(evt) => setQuery(evt.target.value)} value={query} />
