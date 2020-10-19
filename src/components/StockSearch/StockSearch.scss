@@ -1,0 +1,14 @@
+.searchInput {
+    padding: 8px 16px 8px 16px;
+    box-sizing: border-box;
+    border: 1px solid var(--cardBorderColor);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.searchInput__result {
+    &:hover {
+        background-color: var(--backgroundColor);
+        cursor: pointer;
+    }
+}

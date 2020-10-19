@@ -2,7 +2,9 @@ import axios from "axios";
 
 const isProduction = () => process.env.NODE_ENV === "production";
 
-const BASE_URL_DEV = "http://localhost:8080";
+export const API_KEY = process.env.API_KEY;
+
+const BASE_URL_DEV = "https://www.alphavantage.co"
 // When developing in production, set the base url here and
 // add headers and security tokens to the axios.create();
 const BASE_URL_PROD = "";
